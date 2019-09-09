@@ -37,10 +37,3 @@ function handleClick(){
 d3.selectAll("#filter-btn").on("click", handleClick);
 // Build Table with data.js 
 buildTable(tableData);
-
-var tbody = d3.select("tbody")
-data.forEach((UFOReport) => {
-  var row = tbody.append("tr");
-  Object.entries(UFOReport).forEach(([key, value]) => {
-    var cell = row.append("td");
-    cell.text(value);
